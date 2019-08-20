@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activity.MainActivity">
+
+    <data class="MainActivityBinding" />
+
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rain_wind"
+            app:elevation="2dp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:fontFamily="@font/work_sans_bold"
+            android:gravity="center"
+            android:text="London"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/weather_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/work_sans_bold"
+            android:gravity="center"
+            android:text="22\u00B0"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/weather_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather_temp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="Sun and Cloud"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="30sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/weather_desc"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:id="@+id/weakly_weather_recycler"/>
+
+    </RelativeLayout>
+
+
+</layout>

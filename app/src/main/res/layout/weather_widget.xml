@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egypt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:padding="8dp"
+            android:id="@+id/county_name"
+            android:layout_gravity="center"
+            android:fontFamily="@font/work_sans_semibold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 \u00B0"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:padding="8dp"
+            android:id="@+id/temp_text"
+            android:layout_gravity="center"
+            android:fontFamily="@font/work_sans_medium"
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
